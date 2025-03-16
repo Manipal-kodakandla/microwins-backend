@@ -47,4 +47,9 @@ app.post('/api/wins', async (req, res) => {
   }
 });
 
+// ✅ Add this route to test backend homepage
+app.get('/', (req, res) => {
+  res.send('MicroWins Backend is up and running 🚀');
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
